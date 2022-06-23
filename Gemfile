@@ -41,6 +41,8 @@ gem 'tzinfo-data'
 gem "bootsnap", require: false
 
 gem 'ffi'
+gem 'minitest'
+gem 'minitest-reporters'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
