@@ -2,20 +2,32 @@ require "test_helper"
 
 class HtmlPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get html_pages_home_url
+    get root_path
     assert_response :success
-    assert_select "title", "Orbit Feedback App"
+    assert_select "title", "Home | Orbit Feedback App"
   end
 
   test "should get help" do
-    get html_pages_help_url
+    get help_path
     assert_response :success
     assert_select "title", "Help | Orbit Feedback App"
   end
 
   test "should get about" do
-    get html_pages_about_url
+    get about_path
     assert_response :success
     assert_select "title", "About | Orbit Feedback App"
+  end
+
+  test "should get contact" do
+    get contact_path
+    assert_response :success
+    assert_select "title", "Contact | Orbit Feedback App"
+  end
+
+  test "should get signup" do
+    get signup_path
+    assert_response :success
+    assert_select "title", "Signup | Orbit Feedback App"
   end
 end
