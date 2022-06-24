@@ -32,6 +32,7 @@ gem 'tzinfo-data'
 gem "bootsnap", require: false
 
 gem 'ffi'
+gem 'bcrypt'
 
 # Use Sass to process CSS
 gem "sassc-rails"
